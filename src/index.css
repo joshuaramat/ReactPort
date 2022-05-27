@@ -1,13 +1,258 @@
+/* --- Universal Styling -------------------------------- */
+
 body {
+  background-color: #00346B;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  background-image: url("assets/computer-circuit-bg.png"), linear-gradient(#00346B, #002C5C, #00264F, #001933, #001933, #001021);
+  background-size: cover;
+  box-shadow: 0 12px 50px -8px rgba(63, 55, 201, .35);
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  width: 100%;
+}
+.content {
+  background-color: #00346B;
+  border-radius: 2px;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, .1);
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  top: 30px;
+  width: 90%;
+  color: #FEFDF8;
+}
+h3 {
+  background-color: #DD7F5A;
+  border-radius: 15px;
+  color: #FEFDF8;
+  margin: 12px 20px;
+  padding: 10px;
+}
+h4 {
+  color: #DD7F5A;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 20px;
+}
+.btn {
+  /* background-color: #256ff7; */
+  color: #ffffff;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #D19B60;
+  color: #ffffff;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* --- Header ----------------------------------------- */
+
+header {
+  align-items: center;
+  background-color: #001021;
+  border-bottom: 2px solid #DD7F5A;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100px;
+  justify-content: space-around;
+}
+.title {
+  border-radius: 10px;
+  border: 1px solid #DD7F5A;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+.title:hover {
+  border: 1px solid #DD7F5A;
+  transition: all 0.3s ease;
+}
+.title a {
+  color: #FEFDF8;
+}
+.title a:hover {
+  color: #DD7F5A;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* --- Navigation ------------------------------------- */
+
+nav {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: #DD7F5A;
+}
+nav a:hover {
+  color: #FEFDF8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* --- Home ------------------------------------------- */
+
+.home.hero {
+  align-items: flex-end;
+}
+
+/* --- About ------------------------------------------ */
+
+.photo {
+  border: 0;
+  float: right;
+  height: 240px;
+  margin: 0 0 20px 20px;
+  width: 230px;
+}
+
+/* --- Portfolio -------------------------------------- */
+
+.portfolio ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.portfolio li {
+  border: 5px solid #001021;
+  position: relative;
+}
+.portfolio li:hover {
+  border: 5px solid #DD7F5A;
+  transition: all 0.3s ease;
+}
+.portfolio li:hover .project-info {
+  background-color: #DD7F5A;
+  transition: all 0.3s ease;
+}
+.githubLink {
+  background-color: #00264F;
+  color: #fff;
+  font-size: 22px;
+  padding: 2px 8px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+.project-info {
+  background-color: #001021;
+  bottom: 10px;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+}
+.project-details {
+  display: block;
+  font-size: 16px;
+}
+.screenshot {
+  width: 100%;
+}
+
+/* --- Contact ---------------------------------------- */
+
+label {
+  font-weight: 700;
+  color: #DD7F5A;
+}
+.error {
+  color: #e60000;
+}
+.error i {
+  margin: 0 10px 0 0;
+}
+.error p {
+  display: inline-block;
+}
+
+/* --- Resume ----------------------------------------- */
+
+.resume ul {
+  list-style-type: disc;
+  margin-left: 15px;
+  padding-bottom: 20px;
+}
+
+/* --- Footer ----------------------------------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+}
+footer li {
+  padding: 0 20px;
+}
+footer a {
+  color: #FEFDF8;
+}
+footer a:hover {
+  color: #DD7F5A;
+}
+footer i {
+  font-size: 30px;
+}
+
+/* --- Media Queries ---------------------------------- */
+
+@media screen and (min-width: 728px) {
+  header {
+    flex-direction: row;
+    height: 60px;
+  }
+  nav {
+    width: 40%;
+  }
+  .home.hero {
+    justify-content: flex-end;
+  }
+  .about .content {
+    height: 330px;
+  }
+  .portfolio ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio li {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    width: 30%;
+  }
+  .portfolio li {
+    width: calc((100% / 3) - 20px);
+  }
 }

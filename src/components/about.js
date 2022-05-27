@@ -1,11 +1,14 @@
+import React from "react";
+import joshua from "../assets/joshua.JPG";
+
 function About() {
     return (
         <>
-            <section className="about">
+            <section className="about hero">
                 <div className="content">
                     <h4>About</h4>
-                    <img src="" alt="" className="photo" />
-                    <p></p>
+                    <img src={joshua} alt="" className="photo" />
+                    <p>Hello world!</p>
                 </div>
             </section>
         </>
