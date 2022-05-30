@@ -8,6 +8,7 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <header />
+      <Nav></Nav>
       <main>
         <Routes>
           <Route path="/" element={<About/>} />
