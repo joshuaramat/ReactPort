@@ -16,6 +16,11 @@ function Nav() {
                             About
                         </a>
                     </li>
+                    <li className="mx-2">
+                        <a data-testid="link" href="#portfolio">
+                            Portfolio
+                        </a>
+                    </li>
                     <li>
                         <span>Contact</span>
                     </li>
