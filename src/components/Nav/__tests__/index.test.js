@@ -6,30 +6,30 @@ import Nav from '../nav';
 afterEach(cleanup);
 
 describe('Nav component', () => {
-    it('renders', () => {
-        render(<Nav />);
-    });
+	it('renders', () => {
+			render(<Nav />);
+	});
 
-    it('matches snapshot', () => {
-        const { asFragment } = render(<Nav />);
+	it('matches snapshot', () => {
+		const { asFragment } = render(<Nav />);
 
-        expect(asFragment()).toMatchSnapshot();
-    });
+		expect(asFragment()).toMatchSnapshot();
+	});
 });
 
 describe('emoji is visible', () => {
-    it('inserts emoji into the h2', () => {
-        const { getByLabelText } = render(<Nav />);
+	it('inserts emoji into the h2', () => {
+		const { getByLabelText } = render(<Nav />);
 
-        expect(getByLabelText('develop')).toHaveTextContent('👨‍💻');
-    });
+		expect(getByLabelText('develop')).toHaveTextContent('👨‍💻');
+	});
 });
 
 describe('links are visible', () => {
-    it('inserts text into the links', () => {
-        const { getByTestId } = render(<Nav />);
+	it('inserts text into the links', () => {
+		const { getByTestId } = render(<Nav />);
 
-        expect(getByTestId('link')).toHaveTextContent('Joshua Ramat');
-        expect(getByTestId('link')).toHaveTextContent('About');
-    });
+		expect(getByTestId('link')).toHaveTextContent('Joshua Ramat');
+		expect(getByTestId('link')).toHaveTextContent('About');
+	});
 })
