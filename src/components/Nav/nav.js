@@ -5,7 +5,8 @@ function Nav() {
         <header>
             <h2>
                 <a data-testid="link" href="/">
-                    <span role="img" aria-label="develop">👨‍💻</span>Joshua Ramat
+                    <span role="img" aria-label="develop">👨‍💻</span>
+                    Joshua Ramat
                 </a>
             </h2>
             <nav>
