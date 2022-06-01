@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About/about";
-// import Home from "./components/home"
+import Home from "./components/home"
 import Nav from "./components/Nav/nav";
+import Port from "./components/Portfolio/port";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<About/>} />
-          {/* <Route path="/home" element={<Home/>} /> */}
+          <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/portfolio" element={<Port />} />
         </Routes>
       </main>
       <footer />
