@@ -24,3 +24,12 @@ describe('emoji is visible', () => {
         expect(getByLabelText('develop')).toHaveTextContent('👨‍💻');
     });
 });
+
+describe('links are visible', () => {
+    it('inserts text into the links', () => {
+        const { getByTestId } = render(<Nav />);
+
+        expect(getByTestId('link')).toHaveTextContent('Joshua Ramat');
+        expect(getByTestId('link')).toHaveTextContent('About');
+    });
+})
