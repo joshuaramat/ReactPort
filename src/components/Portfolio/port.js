@@ -34,7 +34,7 @@ function Port() {
 							<i className="fab fa-github"></i>
 						</a>
 						<a href="">
-							<img src={} alt="" className="screenshot" />
+							<img alt="" className="screenshot" />
 							<div className="project-info">
 								<div>Sample Project</div>
 								<div className="project-details">Express.js</div>
