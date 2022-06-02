@@ -1,11 +1,11 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import { Link } from "react-router-dom"
 
 function Nav() {
 	return (
 		<header>
 			<h2>
-				<a data-testid="link" href="/home">
+				<a data-testid="link" href="/home" className="title">
 					<span role="img" aria-label="develop">💻</span>
 					Joshua Ramat
 				</a>
@@ -13,19 +13,13 @@ function Nav() {
 			<nav>
 				<ul className="flex-row">
 					<li>
-						<a data-testid="link" href="#about">
-							About
-						</a>
+						<Link to="/about">About</Link>
 					</li>
 					<li>
-						<a data-testid="link" href="#portfolio">
-							Portfolio
-						</a>
+						<Link to="/portfolio">Portfolio</Link>
 					</li>
 					<li>
-						<a data-testid="link" href="#contact">
-							Contact
-						</a>
+						<Link to="/contact">Contact</Link>
 					</li>
 					<li>
 						<span href="">
