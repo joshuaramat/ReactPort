@@ -2,13 +2,7 @@ import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import movieDashboard from '../../assets/movieDashboard.jpeg';
 
-function Port(props) {
-	const project = [
-		{
-			name: 'moviedashboard',
-			github: ''
-		}
-	]
+function Port() {
 	return (
 		<section>
 			<div>
