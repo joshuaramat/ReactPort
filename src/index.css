@@ -13,12 +13,12 @@ ul {
   padding: 0;
 }
 .cover {
-  background-image: url("assets/computer-circuit-bg.png"), linear-gradient(#00346B, #002C5C, #00264F, #001933, #001933, #001021);
+  background-image: url("./assets/background-cover.png"), linear-gradient(#00346B, #002C5C, #00264F, #001933, #001933, #001021);
   background-size: cover;
-  box-shadow: 0 12px 50px -8px rgba(63, 55, 201, .35);
+  box-shadow: 0 15px 75px -10px rgba(63, 55, 201, .35);
   display: flex;
   justify-content: center;
-  min-height: 300px;
+  min-height: 1200px;
   width: 100%;
 }
 .content {
