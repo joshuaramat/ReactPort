@@ -1,9 +1,8 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/home";
-import About from "./components/About/about";
-import Nav from "./components/Nav/nav";
-import Port from "./components/Portfolio/port";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './components/About/about';
+import Nav from './components/Nav/nav';
+import Port from './components/Portfolio/port';
 
 function App() {
   return (
@@ -11,9 +10,9 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Port />} />
+          <Route path='/' element={<About />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/portfolio' element={<Port />} />
         </Routes>
       </main>
       <footer />

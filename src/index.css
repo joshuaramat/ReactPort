@@ -12,7 +12,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-.hero {
+.cover {
   background-image: url("assets/computer-circuit-bg.png"), linear-gradient(#00346B, #002C5C, #00264F, #001933, #001933, #001021);
   background-size: cover;
   box-shadow: 0 12px 50px -8px rgba(63, 55, 201, .35);
@@ -131,24 +131,24 @@ nav a:hover {
 
 /* --- Portfolio -------------------------------------- */
 
-.portfolio ul {
+.port ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.portfolio li {
+.port li {
   border: 5px solid #001021;
   position: relative;
 }
-.portfolio li:hover {
+.port li:hover {
   border: 5px solid #DD7F5A;
   transition: all 0.3s ease;
 }
-.portfolio li:hover .project-info {
+.port li:hover .project-info {
   background-color: #DD7F5A;
   transition: all 0.3s ease;
 }
-.githubLink {
+.github {
   background-color: #00264F;
   color: #fff;
   font-size: 22px;
