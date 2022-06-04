@@ -6,7 +6,6 @@ function Nav() {
 		<header>
 			<h2>
 				<a data-testid='link' href='/ReactPort' className='title'>
-					<span role='img' aria-label='develop'>💻</span>
 					Joshua Ramat
 				</a>
 			</h2>
