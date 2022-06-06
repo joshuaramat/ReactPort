@@ -1,6 +1,7 @@
 import React from 'react';
-import movieDashboard from '../../assets/movieDashboard.jpeg';
-import codeQuiz from '../../assets/code-quiz.png';
+import moviedashboard from '../../assets/movieDashboard.jpeg';
+import codequiz from '../../assets/code-quiz.png';
+import notetaker from '../../assets/note-taker.png';
 
 function Port() {
 	return (
@@ -14,7 +15,7 @@ function Port() {
 						</a>
 						<a href='https://blooming-stream-54961.herokuapp.com/' target='_blank' rel='noreferrer'>
 							<img
-								src={movieDashboard}
+								src={moviedashboard}
 								alt='Movie Search Engine'
 								className='screenshot'
 							/>
@@ -34,13 +35,26 @@ function Port() {
 							<i className='fab fa-github'></i>
 						</a>
 						<a href='https://joshuaramat.github.io/code-quiz/' target='_blank' rel='noreferrer'>
-							<img src={codeQuiz} alt='screenshot of a coding quiz' className='screenshot' />
+							<img src={codequiz} alt='screenshot of a coding quiz' className='screenshot' />
 							<div className='project-info'>
 								<span>Code Quiz</span>
-								<span className='project-details'>JavaScript/HTML/CSS</span>
+								<span className='project-details'>JavaScript</span>
 							</div>
 						</a>
 					</li>
+
+					<li>
+            <a href="https://github.com/tw2159/Note-Taker" class="github" target="_blank" rel="noreferrer">
+							<i className="fab fa-github"></i>
+						</a>
+            <a href="https://limitless-dusk-41992.herokuapp.com/" target="_blank" rel="noreferrer">
+              <img src={notetaker} alt="" className="screenshot" />
+              <div className="project-info">
+                <span>Note Taker</span>
+                <span className="project-details">Express.js</span>
+              </div>
+            </a>
+          </li>
 				</ul>
 			</div>
 		</section>
