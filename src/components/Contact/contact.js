@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 
 function Contact() {
-  const [formState, setFormstate] = useState({name: '', email: '', message: ''});
+  const [formState, setFormState] = useState({name: '', email: '', message: ''});
   
   const [errorMessage, setErrrorMessage] = useState('');
 
@@ -10,6 +10,13 @@ function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
   }
+
+  function handleChange(e) {
+    setFormState({ ...formState, [e.target.value]: e.target.value })
+  }
+
+  console.log(formState);
+
 
   return (
     <section className='contact cover'>
@@ -23,7 +30,7 @@ function Contact() {
               className='form-control' 
               placeholder='name' 
               defaultValue={name} 
-              onBlur={} 
+              onBlur={handleChange} 
             />
           </div>
 
@@ -34,7 +41,7 @@ function Contact() {
               className='form-control' 
               placeholder='email' 
               defaultValue={email} 
-              onBlur={} 
+              onBlur={handleChange} 
             />
           </div>
 
@@ -45,7 +52,7 @@ function Contact() {
               className='form-control' 
               placeholder='message' 
               defaultValue={message} 
-              onBlur={} 
+              onBlur={handleChange} 
             />
           </div>
           <button type='submit' className='btn'>Submit</button>
