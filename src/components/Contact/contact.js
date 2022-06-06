@@ -1,18 +1,28 @@
 import { React, useState } from "react";
 
 function Contact() {
+  const [formState, setFormstate] = useState({name: '', email: '', message: ''});
+  
+  const [errorMessage, setErrrorMessage] = useState('');
+
+  const { name, email, message } = formState;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <section className='contact cover'>
       <div className='content'>
         <h4>Contact</h4>
-        <form id='contact-form' onSubmit={}>
+        <form id='contact-form' onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='name'>Name</label>
             <input 
               type='text' 
               className='form-control' 
               placeholder='name' 
-              defaultValue={} 
+              defaultValue={name} 
               onBlur={} 
             />
           </div>
@@ -23,7 +33,7 @@ function Contact() {
               type='text' 
               className='form-control' 
               placeholder='email' 
-              defaultValue={} 
+              defaultValue={email} 
               onBlur={} 
             />
           </div>
@@ -34,7 +44,7 @@ function Contact() {
               type='text' 
               className='form-control' 
               placeholder='message' 
-              defaultValue={} 
+              defaultValue={message} 
               onBlur={} 
             />
           </div>
