@@ -24,12 +24,12 @@ function Contact() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrrorMessage(`${e.target.name} is required.`);
+        setErrrorMessage(` invalid ${e.target.name}.`);
       } else {
         setErrrorMessage('');
       }
     }
-    
+
     if (!errorMessage) {
         setFormState({ ...formState, [e.target.name]: e.target.value })
       }
