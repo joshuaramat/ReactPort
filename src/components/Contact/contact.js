@@ -21,14 +21,15 @@ function Contact() {
         setErrrorMessage('invalid email.');
       } else {
         setErrrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrrorMessage(`${e.target.name} is required.`);
       } else {
-        if (!e.target.value.length) {
-          setErrrorMessage(`${e.target.name} is required.`);
-        } else {
-          setErrrorMessage('');
-        }
+        setErrrorMessage('');
       }
     }
+    
     if (!errorMessage) {
         setFormState({ ...formState, [e.target.name]: e.target.value })
       }
