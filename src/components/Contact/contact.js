@@ -3,9 +3,7 @@ import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
   const [formState, setFormState] = useState({name: '', email: '', message: ''});
-  
   const [errorMessage, setErrrorMessage] = useState('');
-
   const { name, email, message } = formState;
 
   function handleSubmit(e) {
@@ -13,7 +11,7 @@ function Contact() {
   }
 
   function handleChange(e) {
-    if (e.target.target.value === 'email') {
+    if (e.target.target.value === 'E-Mail') {
       const isValid = validateEmail(e.target.value);
       console.log(isValid);
 
@@ -34,9 +32,6 @@ function Contact() {
         setFormState({ ...formState, [e.target.name]: e.target.value })
       }
   }
-
-  console.log(formState);
-
 
   return (
     <section className='contact cover'>
@@ -59,7 +54,7 @@ function Contact() {
             <input 
               type='text' 
               className='form-control' 
-              placeholder='email' 
+              placeholder='e-mail' 
               defaultValue={email} 
               onBlur={handleChange} 
             />
@@ -67,14 +62,22 @@ function Contact() {
 
           <div className='form-group'>
             <label htmlFor='Message'>Message</label>
-            <input 
-              type='text' 
-              className='form-control' 
-              placeholder='message' 
-              defaultValue={message} 
-              onBlur={handleChange} 
+            <textarea
+              name='message'
+              rows='5'
+              className='form-control'
+              placeholder='Message'
+              defaultValue={message}
+              onBlur={handleChange}
             />
           </div>
+          
+          {errorMessage && (
+            <div>
+              <p className='error'>{errorMessage}</p>
+            </div>
+          )}
+
           <button type='submit' className='btn'>Submit</button>
         </form>
       </div>
