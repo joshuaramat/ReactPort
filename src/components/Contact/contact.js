@@ -52,7 +52,7 @@ function Contact() {
           <div className='form-group'>
             <label htmlFor='email'>E-Mail</label>
             <input 
-              type='text' 
+              type='email' 
               className='form-control' 
               placeholder='e-mail' 
               defaultValue={email} 
