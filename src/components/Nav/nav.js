@@ -25,7 +25,7 @@ function Nav() {
 							Resume
 						</span>
 					</li>
-				</ul>
+				</ul>	
 			</nav>
 		</header>
 	)

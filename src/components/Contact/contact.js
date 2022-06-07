@@ -1,19 +1,56 @@
 import { React, useState } from "react";
+import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
+  const [formState, setFormState] = useState({name: '', email: '', message: ''});
+  
+  const [errorMessage, setErrrorMessage] = useState('');
+
+  const { name, email, message } = formState;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  function handleChange(e) {
+    if (e.target.target.value === 'email') {
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid);
+
+      if (!isValid) {
+        setErrrorMessage('invalid email.');
+      } else {
+        setErrrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrrorMessage(` invalid ${e.target.name}.`);
+      } else {
+        setErrrorMessage('');
+      }
+    }
+
+    if (!errorMessage) {
+        setFormState({ ...formState, [e.target.name]: e.target.value })
+      }
+  }
+
+  console.log(formState);
+
+
   return (
     <section className='contact cover'>
       <div className='content'>
         <h4>Contact</h4>
-        <form id='contact-form' onSubmit={}>
+        <form id='contact-form' onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='name'>Name</label>
             <input 
               type='text' 
               className='form-control' 
               placeholder='name' 
-              defaultValue={} 
-              onBlur={} 
+              defaultValue={name} 
+              onBlur={handleChange} 
             />
           </div>
 
@@ -23,8 +60,8 @@ function Contact() {
               type='text' 
               className='form-control' 
               placeholder='email' 
-              defaultValue={} 
-              onBlur={} 
+              defaultValue={email} 
+              onBlur={handleChange} 
             />
           </div>
 
@@ -34,8 +71,8 @@ function Contact() {
               type='text' 
               className='form-control' 
               placeholder='message' 
-              defaultValue={} 
-              onBlur={} 
+              defaultValue={message} 
+              onBlur={handleChange} 
             />
           </div>
           <button type='submit' className='btn'>Submit</button>
