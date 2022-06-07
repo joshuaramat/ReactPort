@@ -11,7 +11,7 @@ function Contact() {
   }
 
   function handleChange(e) {
-    if (e.target.target.value === 'E-Mail') {
+    if (e.target.name === 'E-Mail') {
       const isValid = validateEmail(e.target.value);
       console.log(isValid);
 
