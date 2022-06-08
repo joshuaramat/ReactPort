@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ReactPort/static/css/main.76eae84c.css",
+    "main.js": "/ReactPort/static/js/main.fecb64dc.js",
+    "static/media/joshua.JPG": "/ReactPort/static/media/joshua.6e2de7ee7af4777c7d4f.JPG",
+    "static/media/background-cover.png": "/ReactPort/static/media/background-cover.fbb2dc0d04d897313f25.png",
+    "static/media/note-taker.png": "/ReactPort/static/media/note-taker.5d97b1bca7f21e34b656.png",
+    "static/media/movieDashboard.jpeg": "/ReactPort/static/media/movieDashboard.a9345d2f2a8445d540da.jpeg",
+    "static/media/code-quiz.png": "/ReactPort/static/media/code-quiz.41d26539c3303f94522a.png",
+    "index.html": "/ReactPort/index.html",
+    "main.76eae84c.css.map": "/ReactPort/static/css/main.76eae84c.css.map",
+    "main.fecb64dc.js.map": "/ReactPort/static/js/main.fecb64dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76eae84c.css",
+    "static/js/main.fecb64dc.js"
+  ]
+}
