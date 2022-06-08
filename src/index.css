@@ -18,7 +18,7 @@ ul {
   box-shadow: 0 15px 75px -10px rgba(63, 55, 201, .35);
   display: flex;
   justify-content: center;
-  min-height: 1200px;
+  min-height: 700px;
   width: 100%;
 }
 .content {

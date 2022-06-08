@@ -22,7 +22,7 @@ function Footer() {
         {links.map((link, index) =>
           <li key={index}>
             <a href={link.type} key={index}>
-              <i className={icon.style}></i>
+              <i className={link.style}></i>
             </a>
           </li>
         )}
