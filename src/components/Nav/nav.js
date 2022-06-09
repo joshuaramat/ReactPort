@@ -5,7 +5,7 @@ function Nav() {
 	return (
 		<header>
 			<h2>
-				<a data-testid='link' href='/about' className='title'>
+				<a data-testid='link' href='/port-react' className='title'>
 					Joshua Ramat
 				</a>
 			</h2>
