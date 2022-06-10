@@ -8,7 +8,7 @@ function About() {
 				<div className='content'>
 					<h4>About</h4>
 					<img src={joshua} alt='' className='photo' />
-					<p>Hello world!</p>
+					<p>test bio</p>
 				</div>
 			</section>
 		</>
