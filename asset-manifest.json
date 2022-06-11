@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/port-react/static/css/main.f78b8227.css",
-    "main.js": "/port-react/static/js/main.9bb64c56.js",
+    "main.css": "/port-react/static/css/main.62e05fca.css",
+    "main.js": "/port-react/static/js/main.9532b431.js",
     "static/media/joshua.JPG": "/port-react/static/media/joshua.6e2de7ee7af4777c7d4f.JPG",
     "static/media/background-cover.png": "/port-react/static/media/background-cover.fbb2dc0d04d897313f25.png",
     "static/media/note-taker.png": "/port-react/static/media/note-taker.5d97b1bca7f21e34b656.png",
     "static/media/movieDashboard.jpeg": "/port-react/static/media/movieDashboard.a9345d2f2a8445d540da.jpeg",
     "static/media/code-quiz.png": "/port-react/static/media/code-quiz.41d26539c3303f94522a.png",
     "index.html": "/port-react/index.html",
-    "main.f78b8227.css.map": "/port-react/static/css/main.f78b8227.css.map",
-    "main.9bb64c56.js.map": "/port-react/static/js/main.9bb64c56.js.map"
+    "main.62e05fca.css.map": "/port-react/static/css/main.62e05fca.css.map",
+    "main.9532b431.js.map": "/port-react/static/js/main.9532b431.js.map"
   },
   "entrypoints": [
-    "static/css/main.f78b8227.css",
-    "static/js/main.9bb64c56.js"
+    "static/css/main.62e05fca.css",
+    "static/js/main.9532b431.js"
   ]
 }
