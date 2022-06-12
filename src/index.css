@@ -258,6 +258,7 @@ footer i {
   nav {
     width: 30%;
   }
+  
   .portfolio li {
     width: calc((100% / 3) - 20px);
   }
