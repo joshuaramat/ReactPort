@@ -132,12 +132,13 @@ nav a:hover {
 /* --- Portfolio -------------------------------------- */
 
 .port ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
 }
 .port li {
-  border: 5px solid #001021;
+  border: 3px solid #001021;
   position: relative;
 }
 .port li:hover {
@@ -174,6 +175,7 @@ nav a:hover {
 }
 .screenshot {
   width: 100%;
+  height: 100%;
 }
 
 /* --- Contact ---------------------------------------- */
