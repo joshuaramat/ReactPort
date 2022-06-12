@@ -18,7 +18,7 @@ function Nav() {
 						<Link to='/resume'>Resume</Link>
 					</li>
 				</ul>	
-			</nav>
+			</nav> 
 	)
 }
 
