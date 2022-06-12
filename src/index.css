@@ -1,7 +1,5 @@
-/* --- Universal Styling -------------------------------- */
-
 body {
-  background-color: #00346B;
+  background-color: #001021;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +16,7 @@ ul {
   box-shadow: 0 15px 75px -10px rgba(63, 55, 201, .35);
   display: flex;
   justify-content: center;
-  min-height: 700px;
+  min-height: 600px;
   width: 100%;
 }
 .content {
@@ -52,8 +50,9 @@ h5 {
 }
 .btn {
   /* background-color: #256ff7; */
-  color: #ffffff;
+  color: #DD7F5A;
   font-weight: 600;
+  background-color: #001933;
 }
 .btn:hover {
   background-color: #D19B60;
@@ -122,11 +121,12 @@ nav a:hover {
 /* --- About ------------------------------------------ */
 
 .photo {
-  border: 0;
-  float: right;
+  border: 2rem;
+  float: left;
   height: 240px;
   margin: 0 0 20px 20px;
-  width: 230px;
+  width: 250px;
+  padding-right: 20px;
 }
 
 /* --- Portfolio -------------------------------------- */
@@ -237,6 +237,10 @@ footer i {
   .home.hero {
     justify-content: flex-end;
   }
+
+  .content {
+    justify-content: center;
+  }
   .about .content {
     height: 330px;
   }
@@ -254,5 +258,8 @@ footer i {
   }
   .portfolio li {
     width: calc((100% / 3) - 20px);
+  }
+  .about .content {
+    height: 430px;
   }
 }

@@ -7,11 +7,11 @@ function Footer() {
       style: 'fas fa-envelope'
     },
     {
-      link: 'https://github.com/joshuaramat',
+      type: 'https://github.com/joshuaramat',
       style: 'fab fa-github'
     },
     {
-      link: 'https://www.linkedin.com/in/joshuaramat/',
+      type: 'https://www.linkedin.com/in/joshuaramat/',
       style: 'fab fa-linkedin'
     }
   ];

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 function Nav() {
 	return (
 		<header>
-			<h2>
+			<h1>
 				<a data-testid='link' href='/ReactPort' className='title'>
 					Joshua Ramat
 				</a>
-			</h2>
+			</h1>
 			<nav>
 				<ul className='flex-row'>
 					<li>
@@ -21,9 +21,7 @@ function Nav() {
 						<Link to='/contact'>Contact</Link>
 					</li>
 					<li>
-						<span href=''>
-							Resume
-						</span>
+						<Link to='/resume'>Resume</Link>
 					</li>
 				</ul>	
 			</nav>
