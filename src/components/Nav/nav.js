@@ -3,12 +3,6 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
 	return (
-		<header>
-			<h1>
-				<a data-testid='link' href='/ReactPort' className='title'>
-					Joshua Ramat
-				</a>
-			</h1>
 			<nav>
 				<ul className='flex-row'>
 					<li>
@@ -25,7 +19,6 @@ function Nav() {
 					</li>
 				</ul>	
 			</nav>
-		</header>
 	)
 }
 
