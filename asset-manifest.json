@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/port-react/static/css/main.62e05fca.css",
-    "main.js": "/port-react/static/js/main.9532b431.js",
+    "main.css": "/port-react/static/css/main.1a016100.css",
+    "main.js": "/port-react/static/js/main.f6b2bd30.js",
     "static/media/joshua.JPG": "/port-react/static/media/joshua.6e2de7ee7af4777c7d4f.JPG",
     "static/media/background-cover.png": "/port-react/static/media/background-cover.fbb2dc0d04d897313f25.png",
+    "static/media/work-day-scheduler.png": "/port-react/static/media/work-day-scheduler.3fcc5c493f34afd45455.png",
+    "static/media/weather-dashboard.png": "/port-react/static/media/weather-dashboard.00aa1644c204584c49e2.png",
     "static/media/note-taker.png": "/port-react/static/media/note-taker.5d97b1bca7f21e34b656.png",
     "static/media/movieDashboard.jpeg": "/port-react/static/media/movieDashboard.a9345d2f2a8445d540da.jpeg",
     "static/media/code-quiz.png": "/port-react/static/media/code-quiz.41d26539c3303f94522a.png",
+    "static/media/resume.joshua.ramat.pdf": "/port-react/static/media/resume.joshua.ramat.e34c2bea3a2987ffb103.pdf",
+    "static/media/password-generator.jpg": "/port-react/static/media/password-generator.9cb7a721c182e8dbc08c.jpg",
     "index.html": "/port-react/index.html",
-    "main.62e05fca.css.map": "/port-react/static/css/main.62e05fca.css.map",
-    "main.9532b431.js.map": "/port-react/static/js/main.9532b431.js.map"
+    "main.1a016100.css.map": "/port-react/static/css/main.1a016100.css.map",
+    "main.f6b2bd30.js.map": "/port-react/static/js/main.f6b2bd30.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e05fca.css",
-    "static/js/main.9532b431.js"
+    "static/css/main.1a016100.css",
+    "static/js/main.f6b2bd30.js"
   ]
 }
